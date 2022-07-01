@@ -1,4 +1,5 @@
 :root {
+	--red: #e63600;
 	--orange: #e65c00;
 	--green: #18b201;
 	--blue: #0456c8;
@@ -8,16 +9,20 @@
 
 @keyframes ring {
 	0% {
-		transform: rotate(0);
-		box-shadow: 1px 5px 2px var(--orange);
+		transform: rotate(0deg);
+		box-shadow: 1px 5px 10px var(--orange);
+	}
+	25% {
+		transform: rotate(90deg);
+		box-shadow: 1px 5px 10px var(--green);
 	}
 	50% {
 		transform: rotate(180deg);
-		box-shadow: 1px 5px 2px var(--green);
+		box-shadow: 1px 5px 10px var(--blue);
 	}
 	100% {
 		transform: rotate(360deg);
-		box-shadow: 1px 5px 2px var(--blue);
+		box-shadow: 1px 5px 10px var(--red);
 	}
 }
 @keyframes text-color {
